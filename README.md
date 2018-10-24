@@ -1,4 +1,4 @@
-# Placements-TA
+# Mock Interview Materials
 
 [Behavioral Questions](./behavioral_questions/behavioral.md)
 
