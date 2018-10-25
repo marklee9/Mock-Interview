@@ -2,4 +2,7 @@
 
 [Behavioral Questions](./behavioral_questions/behavioral.md)
 
-[Frontend Trivia Questions](./trivia/javascript.md)
+[Javascript Trivia Questions](./trivia/javascript.md)
+
+[Backend Trivia Questions](./trivia/backend.md)
+

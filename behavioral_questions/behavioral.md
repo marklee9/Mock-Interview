@@ -269,3 +269,10 @@ ___
 Describe a time when you set your sights too high (or too low). 
 
 ___
+
+**Why should we hire you?**
+___
+
+**Why do you want to work here?**
+
+___
