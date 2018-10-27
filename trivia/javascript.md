@@ -3,6 +3,18 @@
 <br/>
 <br/>
 
+<br/>
+
+___
+
+<br/>
+
+What is `this` in Javascript?
+
+        The value of this is usually determined by a functions execution
+        context. Execution context simply means how a function is called.
+
+
 What is difference between `null` and `undefined`
     
     Undefined: value of the variable is not defined.
@@ -32,6 +44,41 @@ What is hoisting in Javascript?
     Hoisting is a JavaScript mechanism where variables and function declarations
     are moved to the top of their scope before code execution.
 
+<br/>
+
+___
+
+<br/>
+
+Tell me about coercion in JavaScript.
+
+        In JavaScript, falsy values can be implicitly coerced to `false`, and truthy values can be coerced to to `true`.
+
+        Strings and Numbers can also be coerced with mathematical operation.
+
+<br/>
+
+___
+
+<br/>
+
+String and Number Coercion.
+
+        + operator can be used for both string and number, but any other
+        operators are exclusively for numeric operations. When those operators are used with Strings, the Strings will be coerced into a number.
+
+
+```js
+1 + "2" = "12"
+"" + 1 + 0 = "10"
+"" - 1 + 0 = -1
+"-9\n" + 5 = "-9\n5"
+"-9\n" - 5 = -14
+"2" * "3" = 6
+4 + 5 + "px" = "9px"
+"$" + 4 + 5 = "$45"
+"4" - 2 = 2
+```
 <br/>
 
 ___
