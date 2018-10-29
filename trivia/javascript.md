@@ -9,6 +9,17 @@ ___
 
 <br/>
 
+Explain event delegation.
+
+        Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements.
+        The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM. The benefits of this technique are:
+
+<br/>
+
+___
+
+<br/>
+
 What is `this` in Javascript?
 
         The value of this is usually determined by a functions execution
@@ -17,13 +28,25 @@ What is `this` in Javascript?
 
 What is difference between `null` and `undefined`
     
-    Undefined: value of the variable is not defined.
-    Null: empty or non-existent value which is used by programmers to indicate “no value”
+        Undefined: value of the variable is not defined.
+
+        Null: empty or non-existent value which is used by programmers to indicate “no value”
 <br/>
 
 ___
 
 <br/>
+
+What does bind do?
+
+        The bind method creates a new function that, when called, has its this keyword set to the first parameter passed into it. 
+        All subsequent parameters are arguments for that bound function.
+<br/>
+
+___
+
+<br/>
+
 
 == vs ===
 
@@ -273,7 +296,61 @@ ___
 
 <br/>
 
+What is the significance of including `use strict` at the beginning of Javascript source file.
 
+        "use strict" is a way to voluntarily enforce stricter parsing and error handling on your JavaScript code at runtime.
+
+        Makes debugging easier.
+        Code errors that would otherwise have been ignored or would have failed silently will now generate errors or throw exceptions, 
+        alerting you sooner to problems in your code and directing you more quickly to their source.
+
+        Prevents accidental globals.
+        Without strict mode, assigning a value to an undeclared variable automatically creates a global variable with that name.
+        This is one of the most common errors in JavaScript. In strict mode, attempting to do so throws an error.
+
+        Eliminates this coercion. 
+        Without strict mode, a reference to a this value of null or undefined is automatically coerced to the global. 
+        This can cause many head fakes and pull-out-your-hair kind of bugs. In strict mode,referencing a this value of null or undefined throws an error.
+
+        Disallows duplicate parameter values.
+        Strict mode throws an error when it detects a duplicate named argument for a function (e.g., function foo(val1, val2, val1){}),
+        thereby catching what is almost certainly a bug in your code that you might otherwise have wasted lots of time tracking down.
+
+        Makes eval() safer.
+        There are some differences in the way eval() behaves in strict mode and in non-strict mode. 
+        Most significantly, in strict mode, variables and functions declared inside of an eval() statement are not created in the 
+        containing scope (they are created in the containing scope in non-strict mode, which can also be a common source of problems).
+
+        Throws error on invalid usage of delete.
+        The delete operator (used to remove properties from objects) cannot be used on non-configurable properties of the object. 
+        Non-strict code will fail silently when an attempt is made to delete a non-configurable property, whereas strict mode will throw an error in such a case.
+<br/>
+
+___
+
+<br/>
+
+What is the potential pitfall of using `typeof bar === Object` to determine if the bar is an object?
+
+        The downfall is that `null` and `array` will also return Object.
+
+<br/>
+
+___
+
+<br/>
+
+
+Explain how prototypal inheritance works.
+
+        In JavaScript, objects have a special internal and hidden property called prototype.
+
+        When we read a property from an object and it is missing, it will look its prototype and see if that property exist in the prototype.
+
+        If it doesn't exist in prototype it will traverse through the prototypal chain
+        with __proto__. __proto__ looks up the prototype of the constructor function that 
+        constructed the object. It will keep traverse through the prototypal chain
+        to find the property.
 
 <br/>
 
